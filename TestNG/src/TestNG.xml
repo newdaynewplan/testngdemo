@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">	<!-- suite name测试报告中测试集的名字， parallel是否并行运行测试用例-->
+  <test name="Test">	<!-- test name测试工程的名字，一个测试工程可以包含多个测试类 -->
+    <classes>
+      <class name="TestCases.LoginTest"/>	<!-- 一个测试类可以包含多个测试方法 -->
+      <class name="Study.SeleniumApi"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

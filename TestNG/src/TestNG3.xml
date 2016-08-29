@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="test" Configfailurepolicy="continue" 	
+    thread-count="2" skipfailedinvocationcounts="true" preserve-order="true">	
+    <!-- parallel值可以为false、true、tests。Suite 设置：测试用例以 test 为单位并行执行，
+         一次并行 2 个测试用例，测试用例执行的顺序是顺序执行，遇到失败的测试用例进行重跑，遇到失败的调用则跳过 -->
+  <test name="LoginTest">	
+    <classes>	
+      <class name="TestCases.LoginTest"/>	
+    </classes>
+  </test> <!-- Test -->
+  <test name="SeleniumApi">	
+  <classes>	
+    <class name="Study.SeleniumApi"/>
+    	<methods>	
+    	    <!-- <include name ="afterTest2"/> -->
+    	    <exclude name ="afterTest3"/>
+    	</methods>
+  </classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->
+<!-- 此时以测试文件为单位，一个测试文件就是一个 Test，报告清楚明了。
+此时设置多线程的时候，以 Tests 为单位，各个测试文件会以不
+同的线程开执行。而我们在设计测试文件的时候，相互之间是没有耦
+合的，互不影响。一个测试 Test 执行完后，完成清理工作，而后再
+执行其他的测试用例，因此不会出现多窗口不被关闭的情况。 -->

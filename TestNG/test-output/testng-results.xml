@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="112447" started-at="2016-08-26T07:17:31Z" finished-at="2016-08-26T07:19:23Z">
+    <groups>
+    </groups>
+    <test name="LoginTest" duration-ms="87937" started-at="2016-08-26T07:17:31Z" finished-at="2016-08-26T07:18:59Z">
+      <class name="TestCases.LoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.LoginTest@1ae9ef9]" name="setup" is-config="true" duration-ms="6161" started-at="2016-08-26T15:17:31Z" finished-at="2016-08-26T15:17:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testlogin(org.w3c.dom.Document)[pri:0, instance:TestCases.LoginTest@1ae9ef9]" name="testlogin" duration-ms="81183" started-at="2016-08-26T15:17:37Z" data-provider="Test_xml_dataprovider" finished-at="2016-08-26T15:18:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[#document: null]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestCases.LoginTest@1ae9ef9]" name="teardown" is-config="true" duration-ms="576" started-at="2016-08-26T15:18:58Z" finished-at="2016-08-26T15:18:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test name="SeleniumApi" duration-ms="24489" started-at="2016-08-26T07:18:59Z" finished-at="2016-08-26T07:19:23Z">
+      <class name="Study.SeleniumApi">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Study.SeleniumApi@ecabac]" name="beforeTest" is-config="true" duration-ms="2575" started-at="2016-08-26T15:18:59Z" finished-at="2016-08-26T15:19:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="ApiDemo()[pri:0, instance:Study.SeleniumApi@ecabac]" name="ApiDemo" duration-ms="21367" started-at="2016-08-26T15:19:01Z" finished-at="2016-08-26T15:19:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiDemo -->
+        <test-method status="PASS" signature="afterTest2()[pri:0, instance:Study.SeleniumApi@ecabac]" name="afterTest2" duration-ms="1" started-at="2016-08-26T15:19:22Z" finished-at="2016-08-26T15:19:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest2 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Study.SeleniumApi@ecabac]" name="afterTest" is-config="true" duration-ms="543" started-at="2016-08-26T15:19:22Z" finished-at="2016-08-26T15:19:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Study.SeleniumApi -->
+    </test> <!-- SeleniumApi -->
+  </suite> <!-- Suite -->
+</testng-results>

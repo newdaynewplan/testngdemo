@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <login name = "登录相关测试数据">
+        <username>yanghui_l@126.com</username>
+        <password>123456</password>
+        <checkpoint1>.//a[contains(@class,'my-zc')]</checkpoint1>
+        <value1>管理众筹</value1>
+    </login>
+        
+</testdata>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="test" Configfailurepolicy="continue" 	
+    thread-count="2" skipfailedinvocationcounts="true" preserve-order="true">	
+    <!-- parallel值可以为false、true、tests。Suite 设置：测试用例以 test 为单位并行执行，
+         一次并行 2 个测试用例，测试用例执行的顺序是顺序执行，遇到失败的测试用例进行重跑，遇到失败的调用则跳过 -->
+  <test name="Test">	
+    <classes>	
+      <class name="TestCases.LoginTest"/>	
+      <class name="Study.SeleniumApi"/>
+      	<methods>	
+<!--       	    <include name ="ApiDemo"/> -->
+<!--       	    <include name ="beforeTest"/> -->
+<!--       	    <include name ="afterTest"/> -->
+<!--       	    <include name ="afterTest2"/> -->
+      	    <exclude name ="afterTest3"/>
+      	</methods>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- 以class为单位，但是这样写虽然不影响测试用例的执行，但有如下几个缺点： 
+（1）如果并发执行的话，可以用methods级来执行，但是通常一
+个测试用例中的多个方面之间有相关的，不是太好，我们通常以tests
+为单位来执行。此时，如果Testng.xml这样写的话，就会被当成一个
+线程中的测试用例，达不到多线程的效果。 
+（2）当一个测试文件中包含多个测试方法时，这样写就无法清楚
+地分辨出多个方法了，如果执行出错，不方便定位。 
+（3）如果在一个测试用例中打开多个窗口的话，Webdriver 的
+quit（）函数无法将所有的窗口关闭。  -->
