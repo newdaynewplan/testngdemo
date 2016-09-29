@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="test" Configfailurepolicy="continue" 	
+<suite name="Suite" parallel="tests" Configfailurepolicy="continue" 	
     thread-count="2" skipfailedinvocationcounts="true" preserve-order="true">	
     <!-- parallel值可以为false、true、tests。Suite 设置：测试用例以 test 为单位并行执行，
          一次并行 2 个测试用例，测试用例执行的顺序是顺序执行，遇到失败的测试用例进行重跑，遇到失败的调用则跳过 -->
